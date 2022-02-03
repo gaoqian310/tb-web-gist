@@ -22,6 +22,8 @@ You can take down the container with following command:
 6. Go to your web browser and type 127.0.0.1  -  you should see "Prototype Test Project"
 7. Go to http://127.0.0.1/nova  - you should see login page
 
+- $ php artisan migrate:fresh --seed
+
 # Git
 set up upstream
 - $ git pull --set-upstream origin main  
@@ -44,3 +46,7 @@ Using the option -am allows you to add and create a message for the commit in on
 - $ mv file directory Move file to directory
 - $ cp file directory Copy file to directory
 - $ cp -r directory1 directory2 Copy directory1 and its contents to directory2
+
+- $ bash
+- $ zsh
+
