@@ -24,6 +24,8 @@ You can take down the container with following command:
 
 - $ php artisan migrate:fresh --seed
 
+- $ php artisan make:migration create_locations_table
+
 # Git
 set up upstream
 - $ git pull --set-upstream origin main  
