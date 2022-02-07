@@ -83,3 +83,4 @@ Using the option -am allows you to add and create a message for the commit in on
 
 # VS Code
 - Text::make('Vendor Name', 'vendors_name')
+- $ table->string('booth_plan')->nullable()
