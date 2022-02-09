@@ -55,14 +55,14 @@ php artisan nova:resource Commerce\ \Vendor --model=Commerce\ \Vendor
 
 namespace App\Nova\Commerce
 
-(add)
-use Laravel\Nova\Http\Requests\NovaRequest;
+(add)  
+use Laravel\Nova\Http\Requests\NovaRequest;  
 
-use App\Nova\Resource;
+use App\Nova\Resource;  
 
-use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Text;  
 
-use Laravel\Nova\Fields\Select;
+use Laravel\Nova\Fields\Select;  
 
 ID::make(__('ID'), 'id')->sortable(),
 Text::make('Location Name'),
