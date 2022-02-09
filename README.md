@@ -56,9 +56,12 @@ php artisan nova:resource Commerce\ \Vendor --model=Commerce\ \Vendor
 namespace App\Nova\Commerce
 
 (add)
->>use Laravel\Nova\Http\Requests\NovaRequest;
+use Laravel\Nova\Http\Requests\NovaRequest;
+
 use App\Nova\Resource;
+
 use Laravel\Nova\Fields\Text;
+
 use Laravel\Nova\Fields\Select;
 
 ID::make(__('ID'), 'id')->sortable(),
