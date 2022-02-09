@@ -27,14 +27,14 @@ You can take down the container with following command:
 - $ php artisan make:migration create_locations_table
 
 /vendor
-- $ php artisan make:model Commerce\\Vendor -mf
-- $ php artisan make:model Marketing\\****
+- $ php artisan make:model Commerce\ \Vendor -mf
+- $ php artisan make:model Marketing\ \****
 - modelVendor
 
 - $ php artisan tinker
 - vendor()
 
-- $ php artisan nova:rsource Commerce\\Vendor --model=Commerce\\Vendor
+- $ php artisan nova:rsource Commerce\ \Vendor --model=Commerce\ \Vendor
 responsialbe to create fields
 ID::make(_%_('ID'), 'id')->sortable(),
 **delete % from the line above**
@@ -47,11 +47,11 @@ php artisan make:migration add_json_option_to_user
 
 
 /scr
-php artisan make:model Commerce\\Vendor -mf  
+php artisan make:model Commerce\ \Vendor -mf  
 -mf is migration factory and optional
-php artisan make:model Marketing\\Frontpage
+php artisan make:model Marketing\ \Frontpage
 
-php artisan nova:resource Commerence\\Vendor --model=Commerce\\Vendor
+php artisan nova:resource Commerce\ \Vendor --model=Commerce\ \Vendor
 
 namespace App\Nova\Commerce
 
