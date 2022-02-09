@@ -45,6 +45,42 @@ php artisan migrate:fresh --seed
 
 php artisan make:migration add_json_option_to_user
 
+
+/scr
+php artisan make:model Commerce\\Vendor -mf  
+-mf is migration factory and optional
+php artisan make:model Marketing\\Frontpage
+
+php artisan nova:resource Commerence\\Vendor --model=Commerce\\Vendor
+
+namespace App\Nova\Commerce
+
+(add)
+>>use Laravel\Nova\Http\Requests\NovaRequest;
+use App\Nova\Resource;
+use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Select;
+
+ID::make(__('ID'), 'id')->sortable(),
+Text::make('Location Name'),
+
+Select::make('Type')->options([
+                    'business' => "Business",
+                    'warehouse' => "Warehouse",
+                    'booth' => "Booth",
+                    'residential' => "Residential"
+                    ]),
+
+php artisan tinker
+
+Vendor::find(0)
+
+exit
+quit()
+cl
+
+
+
 # Git
 set up upstream
 - $ git pull --set-upstream origin main  
