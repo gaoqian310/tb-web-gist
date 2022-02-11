@@ -46,12 +46,12 @@ php artisan migrate:fresh --seed
 php artisan make:migration add_json_option_to_user
 
 
-/scr
-php artisan make:model Commerce\ \Vendor -mf  
--mf is migration factory and optional
+/scr  
+**php artisan make:model Commerce\ \Vendor -mf**  
+-mf is table migration and create factory 
 php artisan make:model Marketing\ \Frontpage
 
-php artisan nova:resource Commerce\ \Vendor --model=Commerce\ \Vendor
+**php artisan nova:resource Commerce\ \Vendor --model=Commerce\ \Vendor**  
 
 namespace App\Nova\Commerce
 
