@@ -87,6 +87,59 @@ quit()
 cl
 
 
+## User nova filed connection with Customer (one to one) and Role (many ot many)
+
+### nova/user
+						HasOne::make(__('Customer Profile'), 'customer', Customer::class),
+
+						BelongsToMany::make(__('Roles'), 'roles', Role::class),  
+            
+### nova/customer
+            Select::make('Gender:')->options([
+						  BelongsTo::make(__('User'), 'user', User::class),  
+              
+### nova/role
+public function fields(Request $request)
+    {
+        return [
+            ID::make(_ _('ID'), 'id')->sortable(),
+						Text::make(_ _('Name')),
+						BelongsToMany::make(_ _('User'), 'users', User::class),
+        ];
+    }
+
+### Models/User
+		public function customer()
+		{
+			return $this->hasOne(Customer::class);
+		}
+
+		public function roles()
+		{
+			return $this->belongsToMany(Role::class);
+		}
+
+### Models/Roles
+{
+    use HasFactory;
+
+		public function users()
+		{
+			return $this->belongsToMany(User::class);
+		}
+}
+
+### Models/Customer
+    {
+        return $this->hasMany(Reviews::class);
+    }
+
+		public function user()
+		{
+			return $this->belongsTo(User::class);
+		}
+}
+
 
 # Git
 set up upstream
