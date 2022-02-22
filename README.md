@@ -140,6 +140,9 @@ public function fields(Request $request)
 		}
 }
 
+# After build the models and Nova Resource, will build API  
+API resource: https://laravel.com/docs/9.x/eloquent-resources  
+
 
 # Git
 set up upstream
